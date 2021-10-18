@@ -1,0 +1,2 @@
+0 enceinte
+1 pas_enceinte
