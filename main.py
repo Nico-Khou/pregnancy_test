@@ -2,7 +2,7 @@ import sys
 from model import Model
 from PySide6 import QtCore, QtWidgets, QtGui
 from qt_material import apply_stylesheet
-
+# pyinstaller --name="TestGrossesse" --windowed .\main.py --additional-hooks-dir=.\model.py
 
 class MyWidget(QtWidgets.QWidget):
     def __init__(self):
