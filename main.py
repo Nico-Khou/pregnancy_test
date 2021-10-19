@@ -2,6 +2,8 @@ import sys
 from model import Model
 from PySide6 import QtCore, QtWidgets, QtGui
 from qt_material import apply_stylesheet
+
+
 # pyinstaller --name="TestGrossesse" --windowed .\main.py --additional-hooks-dir=.\model.py
 
 class MyWidget(QtWidgets.QWidget):
@@ -17,7 +19,7 @@ class MyWidget(QtWidgets.QWidget):
         self.result_title = QtWidgets.QLabel('-', alignment=QtCore.Qt.AlignCenter)
         self.result = QtWidgets.QLabel('-', alignment=QtCore.Qt.AlignCenter)
 
-        self.group_result = QtWidgets.QGroupBox('Prédictions')
+        self.group_result = QtWidgets.QGroupBox('Prédiction')
         self.h_layout = QtWidgets.QHBoxLayout()
         self.h_layout.addWidget(self.result_title)
         self.h_layout.addWidget(self.result)
@@ -49,7 +51,7 @@ if __name__ == "__main__":
     apply_stylesheet(app, theme='dark_teal.xml')
 
     widget = MyWidget()
-    widget.setWindowTitle('Test de grossesse')
+    widget.setWindowTitle('Demo')
     widget.resize(480, 600)
     widget.show()
 
