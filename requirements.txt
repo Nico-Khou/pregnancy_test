@@ -2,3 +2,5 @@ keras
 tensorflow
 Pillow
 numpy
+pyside6
+qt-material
